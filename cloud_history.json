@@ -1,0 +1,47 @@
+[
+  {
+    "player": "dan04",
+    "title": "[Создатель]",
+    "price": 179,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "02:15:45",
+    "date": "20.09.2026"
+  },
+  {
+    "player": "ansved",
+    "title": "[Сквид]",
+    "price": 129,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "02:15:45",
+    "date": "20.09.2026"
+  },
+  {
+    "player": "dan04",
+    "title": "[Властелин]",
+    "price": 170,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "02:15:45",
+    "date": "20.09.2026"
+  },
+  {
+    "player": "lina",
+    "title": "[ХЕЛПЕР]",
+    "price": 1030,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "02:15:45",
+    "date": "20.09.2026"
+  },
+  {
+    "player": "vin10666777",
+    "title": "[Страж]",
+    "price": 27,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "02:15:45",
+    "date": "20.09.2026"
+  }
+]
