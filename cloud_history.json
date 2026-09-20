@@ -88,5 +88,14 @@
     "amount": 1,
     "timestamp": "12:54:24",
     "date": "20.09.2026"
+  },
+  {
+    "player": "syrok2k10",
+    "title": "Инструментальные ключи",
+    "price": 70,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "13:06:35",
+    "date": "20.09.2026"
   }
 ]
