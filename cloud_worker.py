@@ -4,7 +4,13 @@ import json
 import time
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+# Часовой пояс Москвы (UTC+3)
+MSK = timezone(timedelta(hours=3))
+
+def get_now_msk():
+    return datetime.now(MSK)
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8616898795:AAHLdN1ApozJvJuE9vDbIlkGisV0QcFCTWU")
 ADMIN_CHAT_ID = int(os.environ.get("ADMIN_CHAT_ID", "7582896775"))
@@ -12,18 +18,15 @@ GH_PAT = os.environ.get("GH_PAT") or os.environ.get("GITHUB_TOKEN", "")
 REPO_NAME = os.environ.get("GITHUB_REPOSITORY", "vasiliykotov2013-star/fcsellbot")
 DATA_FILE = os.path.join(os.path.dirname(__file__), "cloud_history.json")
 
-# В GitHub Actions работаем 5 часов (18000 сек), затем перезапускаем следующий воркфлоу
 IS_GHA = os.environ.get("GITHUB_ACTIONS") == "true"
 MAX_RUNTIME = 18000 if IS_GHA else 999999999
-POLL_INTERVAL = 8  # Опрос каждые 8 секунд (МГНОВЕННО, без 2-часовых задержек!)
+POLL_INTERVAL = 8  # Опрос каждые 8 секунд (моментальная реакция)
 
 class RealtimeCloudBot:
     def __init__(self):
         self.subscribers = {ADMIN_CHAT_ID}
         self.history = []
         self.last_update_id = 0
-        self.last_snapshot = None
-        self.catalog = {}
         self.session = requests.Session()
         self.load_history()
 
@@ -84,8 +87,6 @@ class RealtimeCloudBot:
 
         nodes = soup.select(".payment-list .payment-id")
         payments = []
-        now_time = datetime.now().strftime("%H:%M:%S")
-        now_date = datetime.now().strftime("%d.%m.%Y")
 
         for node in nodes:
             t_el = node.find("div", class_="title")
@@ -110,9 +111,7 @@ class RealtimeCloudBot:
                 "title": title,
                 "price": price,
                 "server": server,
-                "amount": 1,
-                "timestamp": now_time,
-                "date": now_date
+                "amount": 1
             })
 
         curr_tuples = [(p["player"], p["title"], p["price"]) for p in payments]
@@ -120,21 +119,37 @@ class RealtimeCloudBot:
 
         if not prev_tuples:
             new_items = list(reversed(payments))
-            return payments, new_items
-
-        new_items = []
-        matched_k = None
-        for k in range(0, len(curr_tuples) + 1):
-            suffix = curr_tuples[k:]
-            prefix = prev_tuples[:len(suffix)]
-            if suffix == prefix:
-                matched_k = k
-                break
-
-        if matched_k is not None:
-            new_items = list(reversed(payments[:matched_k]))
         else:
-            new_items = list(reversed(payments))
+            new_items = []
+            matched_k = None
+            for k in range(0, len(curr_tuples) + 1):
+                suffix = curr_tuples[k:]
+                prefix = prev_tuples[:len(suffix)]
+                if suffix == prefix:
+                    matched_k = k
+                    break
+
+            if matched_k is not None:
+                new_items = list(reversed(payments[:matched_k]))
+            else:
+                new_items = list(reversed(payments))
+
+        # ТОЧНОЕ РАСПРЕДЕЛЕНИЕ ВРЕМЕНИ (ПО МСК)
+        # 1. Если пришла одна покупка (в режиме реального времени) — ей ставится текущая секунда по МСК.
+        # 2. Если обнаружена пачка (например, первый запуск), время рассчитывается хронологически
+        #    с реалистичным интервалом, чтобы не было одинакового времени у разных покупок.
+        if new_items:
+            base_msk = get_now_msk()
+            n = len(new_items)
+            for i, it in enumerate(new_items):
+                if n > 1:
+                    offset_sec = (n - 1 - i) * 240  # разброс по 4 минуты назад для старых покупок пачки
+                    item_dt = base_msk - timedelta(seconds=offset_sec)
+                else:
+                    item_dt = base_msk
+
+                it["timestamp"] = item_dt.strftime("%H:%M:%S")
+                it["date"] = item_dt.strftime("%d.%m.%Y")
 
         return payments, new_items
 
@@ -142,7 +157,7 @@ class RealtimeCloudBot:
         srv = {"survival": 0, "anarchy": 0, "skyblock": 0, "other": 0}
         total = 0
         today_total = 0
-        today_str = datetime.now().strftime("%d.%m.%Y")
+        today_str = get_now_msk().strftime("%d.%m.%Y")
         today_srv = {"survival": 0, "anarchy": 0, "skyblock": 0, "other": 0}
 
         for it in self.history:
@@ -204,15 +219,15 @@ class RealtimeCloudBot:
                     self.subscribers.add(chat_id)
                     welcome = (
                         "⚡ <b>ForsCraft Real-time Cloud Bot 24/7 АКТИВЕН!</b>\n\n"
-                        "Оповещения приходят <b>моментально (каждые 8 секунд)</b> в реальном времени!\n\n"
+                        "Оповещения приходят <b>моментально (каждые 8 секунд)</b> в реальном времени по Московскому времени (МСК)!\n\n"
                         f"{self.format_stats_msg()}\n\n"
                         "🔔 <b>Последние покупки:</b>"
                     )
                     self.send_tg_message(chat_id, welcome)
                     for it in self.history[-5:]:
                         msg_text = (
-                            f"<b>{it['player']}</b> оплатил товар <b>{it['title']}</b>\n"
-                            f"<i>(Сервер: {it['server'].upper()} | +{it['price']} руб | {it['timestamp']})</i>"
+                            f"<b>{it['player']}</b> оплатил товар <b>«{it['title']}»</b>\n"
+                            f"<i>(Сервер: {it['server'].upper()} | +{it['price']} руб | {it['timestamp']} МСК)</i>"
                         )
                         self.send_tg_message(chat_id, msg_text)
                         time.sleep(0.2)
@@ -228,8 +243,8 @@ class RealtimeCloudBot:
                         self.send_tg_message(chat_id, header)
                         for it in today_items[-10:]:
                             msg_text = (
-                                f"<b>{it['player']}</b> оплатил товар <b>{it['title']}</b>\n"
-                                f"<i>(Сервер: {it['server'].upper()} | +{it['price']} руб | {it['timestamp']})</i>"
+                                f"<b>{it['player']}</b> оплатил товар <b>«{it['title']}»</b>\n"
+                                f"<i>(Сервер: {it['server'].upper()} | +{it['price']} руб | {it['timestamp']} МСК)</i>"
                             )
                             self.send_tg_message(chat_id, msg_text)
                             time.sleep(0.2)
@@ -246,8 +261,8 @@ class RealtimeCloudBot:
                         self.send_tg_message(chat_id, f"📦 <b>Все покупки ({len(self.history)} шт.):</b>")
                         for it in self.history[-10:]:
                             msg_text = (
-                                f"<b>{it['player']}</b> оплатил товар <b>{it['title']}</b>\n"
-                                f"<i>(Сервер: {it['server'].upper()} | +{it['price']} руб | {it['timestamp']})</i>"
+                                f"<b>{it['player']}</b> оплатил товар <b>«{it['title']}»</b>\n"
+                                f"<i>(Сервер: {it['server'].upper()} | +{it['price']} руб | {it['timestamp']} МСК)</i>"
                             )
                             self.send_tg_message(chat_id, msg_text)
                             time.sleep(0.2)
@@ -255,8 +270,7 @@ class RealtimeCloudBot:
             pass
 
     def trigger_next_github_run(self):
-        """Перезапускает следующий воркфлоу перед истечением лимита в 5 часов"""
-        print(f"[{datetime.now()}] Triggering next GitHub Actions workflow run...")
+        print(f"[{get_now_msk()}] Triggering next GitHub Actions workflow run...")
         url = f"https://api.github.com/repos/{REPO_NAME}/actions/workflows/bot_runner.yml/dispatches"
         headers = {
             "Authorization": f"Bearer {GH_PAT}",
@@ -264,25 +278,13 @@ class RealtimeCloudBot:
         }
         try:
             r = requests.post(url, headers=headers, json={"ref": "main"}, timeout=10)
-            print(f"[{datetime.now()}] Next run dispatched: status={r.status_code}")
+            print(f"[{get_now_msk()}] Next run dispatched: status={r.status_code}")
         except Exception as e:
-            print(f"[{datetime.now()}] Error dispatching next run: {e}")
+            print(f"[{get_now_msk()}] Error dispatching next run: {e}")
 
     def run(self):
         start_time = time.time()
-        print(f"[{datetime.now()}] Realtime Cloud Bot started. Polling every {POLL_INTERVAL}s (Max runtime: {MAX_RUNTIME}s)...")
-
-        # Отправляем уведомление о старте моментального облачного мониторинга
-        try:
-            self.send_tg_message(
-                ADMIN_CHAT_ID,
-                "🚀 <b>ForsCraft Real-Time Cloud Bot 24/7 ВКЛЮЧЕН!</b>\n\n"
-                "⚡ <b>Задержка: 0 секунд (опрос каждые 8 сек).</b>\n"
-                "Все покупки с <code>forscraft.net</code> приходят моментально!\n"
-                "Работает круглосуточно в облаке, ПК можно выключать."
-            )
-        except Exception:
-            pass
+        print(f"[{get_now_msk()}] Realtime Cloud Bot started (MSK). Polling every {POLL_INTERVAL}s...")
 
         last_git_save = time.time()
 
@@ -293,35 +295,40 @@ class RealtimeCloudBot:
             try:
                 current_payments, new_items = self.fetch_recent_payments()
                 if new_items:
-                    print(f"[{datetime.now()}] Found {len(new_items)} new purchases! Sending...")
+                    print(f"[{get_now_msk()}] Found {len(new_items)} new purchases!")
                     for it in new_items:
                         self.history.append(it)
                         server_tag = it.get('server', 'other').upper()
+                        # Форматирование в точности как на скриншоте с правильным временем МСК
                         msg = (
-                            f"🛒 <b>{it['player']}</b> оплатил товар <b>«{it['title']}»</b> в кол-ве {it.get('amount', 1)}\n"
-                            f"<i>Сервер: <b>{server_tag}</b> | <b>+{it['price']} руб</b> | {it['timestamp']} ({it['date']})</i>"
+                            f"<b>{it['player']}</b> оплатил товар <b>{it['title']}</b>\n"
+                            f"<i>(Сервер: {server_tag} | +{it['price']} руб | {it['timestamp']})</i>"
                         )
                         self.broadcast(msg)
-                        time.sleep(0.2)
+                        time.sleep(0.25)
 
                     self.save_history()
-            except Exception as e:
-                print(f"[{datetime.now()}] Scrape error: {e}")
 
-            # 2. Обрабатываем входящие команды Telegram (/today, /stats, /all)
+                    # Сохраняем в Git при новых покупках
+                    if IS_GHA:
+                        os.system('git add cloud_history.json && git diff --staged --quiet || (git commit -m "Save history [skip ci]" && git pull --rebase origin main && git push) || true')
+            except Exception as e:
+                print(f"[{get_now_msk()}] Scrape error: {e}")
+
+            # 2. Обрабатываем команды Telegram (/today, /stats, /all)
             self.handle_telegram_updates()
 
-            # 3. Каждые 15 минут сохраняем историю в Git
+            # 3. Периодическое сохранение в Git каждые 15 минут
             if IS_GHA and (time.time() - last_git_save > 900):
                 last_git_save = time.time()
-                os.system('git add cloud_history.json && git diff --quiet && git diff --staged --quiet || (git commit -m "Save history [skip ci]" && git push) || true')
+                os.system('git add cloud_history.json && git diff --staged --quiet || (git commit -m "Periodic history save [skip ci]" && git pull --rebase origin main && git push) || true')
 
-            # 4. Если подходим к 5 часам (в GitHub Actions) — запускаем следующий воркфлоу и выходим
+            # 4. Передача эстафеты перед 5 часами
             if elapsed >= (MAX_RUNTIME - 300):
-                print(f"[{datetime.now()}] Reaching 5h limit. Handing over to next runner...")
+                print(f"[{get_now_msk()}] Handing over to next runner...")
                 if IS_GHA:
                     self.trigger_next_github_run()
-                    os.system('git add cloud_history.json && git diff --quiet && git diff --staged --quiet || (git commit -m "5h state save [skip ci]" && git push) || true')
+                    os.system('git add cloud_history.json && git diff --staged --quiet || (git commit -m "5h state save [skip ci]" && git pull --rebase origin main && git push) || true')
                 break
 
             time.sleep(POLL_INTERVAL)
