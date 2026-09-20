@@ -151,5 +151,14 @@
     "amount": 1,
     "timestamp": "20:17:15",
     "date": "20.09.2026"
+  },
+  {
+    "player": "Klaunzer",
+    "title": "[Глава]",
+    "price": 249,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "21:08:18",
+    "date": "20.09.2026"
   }
 ]
