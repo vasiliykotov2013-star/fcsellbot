@@ -196,5 +196,14 @@
     "amount": 1,
     "timestamp": "21:18:03",
     "date": "20.09.2026"
+  },
+  {
+    "player": "Klaunzer",
+    "title": "5000 токенов",
+    "price": 50,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "21:22:46",
+    "date": "20.09.2026"
   }
 ]
