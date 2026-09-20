@@ -97,5 +97,14 @@
     "amount": 1,
     "timestamp": "13:06:35",
     "date": "20.09.2026"
+  },
+  {
+    "player": "Fo2_444",
+    "title": "[Властелин]",
+    "price": 70,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "13:25:04",
+    "date": "20.09.2026"
   }
 ]
