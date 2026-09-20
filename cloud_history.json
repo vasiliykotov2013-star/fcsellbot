@@ -43,5 +43,14 @@
     "amount": 1,
     "timestamp": "05:14:10",
     "date": "20.09.2026"
+  },
+  {
+    "player": "Erosadddrom",
+    "title": "Рубины",
+    "price": 185,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "09:44:08",
+    "date": "20.09.2026"
   }
 ]
