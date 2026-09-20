@@ -61,5 +61,14 @@
     "amount": 1,
     "timestamp": "12:08:04",
     "date": "20.09.2026"
+  },
+  {
+    "player": "syrok2k10",
+    "title": "Броневые ключи",
+    "price": 70,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "12:43:01",
+    "date": "20.09.2026"
   }
 ]
