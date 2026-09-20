@@ -178,5 +178,14 @@
     "amount": 1,
     "timestamp": "21:12:57",
     "date": "20.09.2026"
+  },
+  {
+    "player": "Klaunzer",
+    "title": "Оружейные ключи",
+    "price": 42,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "21:15:05",
+    "date": "20.09.2026"
   }
 ]
