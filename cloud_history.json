@@ -376,5 +376,14 @@
     "amount": 1,
     "timestamp": "22:42:13",
     "date": "22.09.2026"
+  },
+  {
+    "player": "14lyovkin88",
+    "title": "[Герой]",
+    "price": 39,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "23:12:14",
+    "date": "22.09.2026"
   }
 ]
