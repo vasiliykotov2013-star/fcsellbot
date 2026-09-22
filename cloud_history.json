@@ -313,5 +313,14 @@
     "amount": 1,
     "timestamp": "16:14:18",
     "date": "22.09.2026"
+  },
+  {
+    "player": "vand",
+    "title": "[Гл.Админ]",
+    "price": 119,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "17:13:57",
+    "date": "22.09.2026"
   }
 ]
