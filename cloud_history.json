@@ -304,5 +304,14 @@
     "amount": 1,
     "timestamp": "12:21:51",
     "date": "22.09.2026"
+  },
+  {
+    "player": "RomaSart",
+    "title": "[Модератор]",
+    "price": 79,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "16:14:18",
+    "date": "22.09.2026"
   }
 ]
