@@ -430,5 +430,14 @@
     "amount": 1,
     "timestamp": "16:33:20",
     "date": "23.09.2026"
+  },
+  {
+    "player": "marazm",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "17:42:42",
+    "date": "23.09.2026"
   }
 ]
