@@ -403,5 +403,14 @@
     "amount": 1,
     "timestamp": "16:11:51",
     "date": "23.09.2026"
+  },
+  {
+    "player": "QuietAura",
+    "title": "5000 токенов",
+    "price": 50,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "16:32:33",
+    "date": "23.09.2026"
   }
 ]
