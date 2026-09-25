@@ -520,5 +520,14 @@
     "amount": 1,
     "timestamp": "14:43:06",
     "date": "25.09.2026"
+  },
+  {
+    "player": "PvP30",
+    "title": "Рубины",
+    "price": 69,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "16:03:16",
+    "date": "25.09.2026"
   }
 ]
