@@ -619,5 +619,14 @@
     "amount": 1,
     "timestamp": "22:09:59",
     "date": "26.09.2026"
+  },
+  {
+    "player": "Klaunzer",
+    "title": "[Титан]",
+    "price": 300,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "22:11:26",
+    "date": "26.09.2026"
   }
 ]
