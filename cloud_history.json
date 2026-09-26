@@ -583,5 +583,14 @@
     "amount": 1,
     "timestamp": "15:57:23",
     "date": "26.09.2026"
+  },
+  {
+    "player": "sss2",
+    "title": "[Титан]",
+    "price": 549,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "18:42:40",
+    "date": "26.09.2026"
   }
 ]
