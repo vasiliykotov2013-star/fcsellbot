@@ -565,5 +565,14 @@
     "amount": 1,
     "timestamp": "08:34:28",
     "date": "26.09.2026"
+  },
+  {
+    "player": "fair553",
+    "title": "[Оператор]",
+    "price": 279,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "09:13:10",
+    "date": "26.09.2026"
   }
 ]
