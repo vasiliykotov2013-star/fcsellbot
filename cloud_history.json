@@ -691,5 +691,14 @@
     "amount": 1,
     "timestamp": "15:00:13",
     "date": "27.09.2026"
+  },
+  {
+    "player": "Moroz_874",
+    "title": "[Админ]",
+    "price": 59,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "15:49:18",
+    "date": "27.09.2026"
   }
 ]
