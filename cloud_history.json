@@ -718,5 +718,14 @@
     "amount": 1,
     "timestamp": "17:21:08",
     "date": "27.09.2026"
+  },
+  {
+    "player": "DeDylet",
+    "title": "Ключи с монетками",
+    "price": 390,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "17:27:40",
+    "date": "27.09.2026"
   }
 ]
