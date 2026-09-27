@@ -736,5 +736,14 @@
     "amount": 1,
     "timestamp": "17:28:01",
     "date": "27.09.2026"
+  },
+  {
+    "player": "DeDylet",
+    "title": "Ключи с рубинами",
+    "price": 316,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "18:07:10",
+    "date": "27.09.2026"
   }
 ]
