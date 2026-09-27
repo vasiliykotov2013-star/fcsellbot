@@ -790,5 +790,14 @@
     "amount": 1,
     "timestamp": "22:25:54",
     "date": "27.09.2026"
+  },
+  {
+    "player": "Barbaris",
+    "title": "[Гл.Админ]",
+    "price": 119,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "22:35:36",
+    "date": "27.09.2026"
   }
 ]
