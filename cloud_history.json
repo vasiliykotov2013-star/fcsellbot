@@ -844,5 +844,14 @@
     "amount": 1,
     "timestamp": "13:40:53",
     "date": "28.09.2026"
+  },
+  {
+    "player": "Barbaris",
+    "title": "Разбан",
+    "price": 499,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "15:34:25",
+    "date": "28.09.2026"
   }
 ]
