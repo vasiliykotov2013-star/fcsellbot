@@ -835,5 +835,14 @@
     "amount": 1,
     "timestamp": "12:52:13",
     "date": "28.09.2026"
+  },
+  {
+    "player": "Maksar5",
+    "title": "Разбан",
+    "price": 499,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "13:40:53",
+    "date": "28.09.2026"
   }
 ]
