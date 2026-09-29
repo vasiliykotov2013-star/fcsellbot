@@ -889,5 +889,14 @@
     "amount": 1,
     "timestamp": "00:16:33",
     "date": "29.09.2026"
+  },
+  {
+    "player": "hogin_1",
+    "title": "Рубины",
+    "price": 210,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "08:04:53",
+    "date": "29.09.2026"
   }
 ]
