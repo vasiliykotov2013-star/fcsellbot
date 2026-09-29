@@ -925,5 +925,14 @@
     "amount": 1,
     "timestamp": "12:05:24",
     "date": "29.09.2026"
+  },
+  {
+    "player": "Koshif999",
+    "title": "[Админ]",
+    "price": 59,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "14:05:38",
+    "date": "29.09.2026"
   }
 ]
