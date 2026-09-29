@@ -934,5 +934,14 @@
     "amount": 1,
     "timestamp": "14:05:38",
     "date": "29.09.2026"
+  },
+  {
+    "player": "popka_100000",
+    "title": "[Герцог]",
+    "price": 1500,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "15:11:21",
+    "date": "29.09.2026"
   }
 ]
