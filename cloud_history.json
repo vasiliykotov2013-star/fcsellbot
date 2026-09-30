@@ -1015,5 +1015,14 @@
     "amount": 1,
     "timestamp": "21:33:05",
     "date": "30.09.2026"
+  },
+  {
+    "player": "Weym",
+    "title": "5000 токенов",
+    "price": 50,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "00:25:24",
+    "date": "01.10.2026"
   }
 ]
