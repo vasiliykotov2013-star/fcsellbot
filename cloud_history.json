@@ -988,5 +988,14 @@
     "amount": 1,
     "timestamp": "19:07:49",
     "date": "30.09.2026"
+  },
+  {
+    "player": "stay_nt6",
+    "title": "[Креатив]",
+    "price": 39,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "21:09:28",
+    "date": "30.09.2026"
   }
 ]
