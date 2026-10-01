@@ -1087,5 +1087,14 @@
     "amount": 1,
     "timestamp": "19:26:30",
     "date": "01.10.2026"
+  },
+  {
+    "player": "meow_uc",
+    "title": "Ключи с монетками",
+    "price": 117,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "19:27:30",
+    "date": "01.10.2026"
   }
 ]
