@@ -1042,5 +1042,14 @@
     "amount": 1,
     "timestamp": "01:35:06",
     "date": "01.10.2026"
+  },
+  {
+    "player": "m1sho4ek",
+    "title": "[Админ]",
+    "price": 20,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "14:05:41",
+    "date": "01.10.2026"
   }
 ]
