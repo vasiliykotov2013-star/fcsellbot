@@ -1069,5 +1069,14 @@
     "amount": 1,
     "timestamp": "18:03:47",
     "date": "01.10.2026"
+  },
+  {
+    "player": "SESE3344",
+    "title": "[Герой]",
+    "price": 39,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "18:56:57",
+    "date": "01.10.2026"
   }
 ]
