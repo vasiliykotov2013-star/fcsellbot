@@ -1096,5 +1096,14 @@
     "amount": 1,
     "timestamp": "19:27:30",
     "date": "01.10.2026"
+  },
+  {
+    "player": "Gaion",
+    "title": "[Основатель]",
+    "price": 219,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "19:34:51",
+    "date": "01.10.2026"
   }
 ]
