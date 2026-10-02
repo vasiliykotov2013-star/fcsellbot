@@ -1123,5 +1123,14 @@
     "amount": 1,
     "timestamp": "20:41:58",
     "date": "01.10.2026"
+  },
+  {
+    "player": "PR0RUS",
+    "title": "[Герой]",
+    "price": 39,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "09:39:11",
+    "date": "02.10.2026"
   }
 ]
