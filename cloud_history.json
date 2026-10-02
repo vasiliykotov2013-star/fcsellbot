@@ -1168,5 +1168,14 @@
     "amount": 1,
     "timestamp": "18:00:39",
     "date": "02.10.2026"
+  },
+  {
+    "player": "Mudruy",
+    "title": "[Консоль]",
+    "price": 479,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "18:48:25",
+    "date": "02.10.2026"
   }
 ]
