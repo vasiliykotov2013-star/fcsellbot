@@ -1348,5 +1348,14 @@
     "amount": 1,
     "timestamp": "15:16:33",
     "date": "03.10.2026"
+  },
+  {
+    "player": "amir",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:26:32",
+    "date": "03.10.2026"
   }
 ]
