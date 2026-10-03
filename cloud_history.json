@@ -1258,5 +1258,14 @@
     "amount": 1,
     "timestamp": "12:44:45",
     "date": "03.10.2026"
+  },
+  {
+    "player": "popka_100000",
+    "title": "Разбан",
+    "price": 499,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "12:55:21",
+    "date": "03.10.2026"
   }
 ]
