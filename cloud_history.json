@@ -1321,5 +1321,14 @@
     "amount": 1,
     "timestamp": "15:08:42",
     "date": "03.10.2026"
+  },
+  {
+    "player": "ggggtrdsa",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:10:07",
+    "date": "03.10.2026"
   }
 ]
