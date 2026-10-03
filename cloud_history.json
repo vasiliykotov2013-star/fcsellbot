@@ -1420,5 +1420,14 @@
     "amount": 1,
     "timestamp": "18:02:30",
     "date": "03.10.2026"
+  },
+  {
+    "player": "DORADURA",
+    "title": "Инструментальные ключи",
+    "price": 28,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "18:07:21",
+    "date": "03.10.2026"
   }
 ]
