@@ -1456,5 +1456,14 @@
     "amount": 1,
     "timestamp": "18:10:32",
     "date": "03.10.2026"
+  },
+  {
+    "player": "DORADURA",
+    "title": "Монетные ключи",
+    "price": 28,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "18:13:13",
+    "date": "03.10.2026"
   }
 ]
