@@ -1213,5 +1213,14 @@
     "amount": 1,
     "timestamp": "08:35:46",
     "date": "03.10.2026"
+  },
+  {
+    "player": "sakytoShiratori",
+    "title": "Рубины",
+    "price": 126,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "10:21:59",
+    "date": "03.10.2026"
   }
 ]
