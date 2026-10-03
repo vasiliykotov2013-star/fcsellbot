@@ -1330,5 +1330,14 @@
     "amount": 1,
     "timestamp": "15:10:07",
     "date": "03.10.2026"
+  },
+  {
+    "player": "ZaharHydraPopka",
+    "title": "[Герой]",
+    "price": 39,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:12:29",
+    "date": "03.10.2026"
   }
 ]
