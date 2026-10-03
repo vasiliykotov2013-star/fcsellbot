@@ -1294,5 +1294,14 @@
     "amount": 1,
     "timestamp": "14:16:51",
     "date": "03.10.2026"
+  },
+  {
+    "player": "jaxonvex",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "14:50:08",
+    "date": "03.10.2026"
   }
 ]
