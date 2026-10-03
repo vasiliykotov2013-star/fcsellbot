@@ -1357,5 +1357,50 @@
     "amount": 1,
     "timestamp": "15:26:32",
     "date": "03.10.2026"
+  },
+  {
+    "player": "ggggtrdsa",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:18:48",
+    "date": "03.10.2026"
+  },
+  {
+    "player": "ZaharHydraPopka",
+    "title": "[Герой]",
+    "price": 39,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:22:48",
+    "date": "03.10.2026"
+  },
+  {
+    "player": "CRYSTALED",
+    "title": "[Герой]",
+    "price": 39,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:26:48",
+    "date": "03.10.2026"
+  },
+  {
+    "player": "Shelpek_777",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:30:48",
+    "date": "03.10.2026"
+  },
+  {
+    "player": "amir",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:34:48",
+    "date": "03.10.2026"
   }
 ]
