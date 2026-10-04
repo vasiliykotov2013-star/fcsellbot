@@ -1780,5 +1780,14 @@
     "amount": 1,
     "timestamp": "22:26:26",
     "date": "04.10.2026"
+  },
+  {
+    "player": "doradura",
+    "title": "[Властелин]",
+    "price": 230,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "22:49:51",
+    "date": "04.10.2026"
   }
 ]
