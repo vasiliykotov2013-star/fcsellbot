@@ -1762,5 +1762,14 @@
     "amount": 1,
     "timestamp": "21:16:11",
     "date": "04.10.2026"
+  },
+  {
+    "player": "doradura",
+    "title": "Размут",
+    "price": 249,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "21:17:08",
+    "date": "04.10.2026"
   }
 ]
