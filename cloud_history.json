@@ -1681,5 +1681,14 @@
     "amount": 1,
     "timestamp": "15:47:08",
     "date": "04.10.2026"
+  },
+  {
+    "player": "jaxonvex",
+    "title": "5000 токенов",
+    "price": 50,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:48:42",
+    "date": "04.10.2026"
   }
 ]
