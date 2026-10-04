@@ -1717,5 +1717,14 @@
     "amount": 1,
     "timestamp": "16:15:08",
     "date": "04.10.2026"
+  },
+  {
+    "player": "PR0RUS",
+    "title": "[Князь]",
+    "price": 1260,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "16:55:03",
+    "date": "04.10.2026"
   }
 ]
