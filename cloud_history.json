@@ -1636,5 +1636,14 @@
     "amount": 1,
     "timestamp": "12:10:22",
     "date": "04.10.2026"
+  },
+  {
+    "player": "Hydra_pvp",
+    "title": "Разбан",
+    "price": 499,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "12:54:29",
+    "date": "04.10.2026"
   }
 ]
