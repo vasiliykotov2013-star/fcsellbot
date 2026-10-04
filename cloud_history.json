@@ -1654,5 +1654,14 @@
     "amount": 1,
     "timestamp": "15:02:23",
     "date": "04.10.2026"
+  },
+  {
+    "player": "tick12",
+    "title": "Разбан",
+    "price": 499,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "15:25:50",
+    "date": "04.10.2026"
   }
 ]
