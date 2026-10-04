@@ -1663,5 +1663,14 @@
     "amount": 1,
     "timestamp": "15:25:50",
     "date": "04.10.2026"
+  },
+  {
+    "player": "wartik",
+    "title": "Разбан",
+    "price": 499,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "15:28:30",
+    "date": "04.10.2026"
   }
 ]
