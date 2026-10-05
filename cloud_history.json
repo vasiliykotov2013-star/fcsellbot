@@ -1816,5 +1816,14 @@
     "amount": 1,
     "timestamp": "05:19:40",
     "date": "05.10.2026"
+  },
+  {
+    "player": "Wh1be",
+    "title": "[Сервер]",
+    "price": 949,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "06:53:28",
+    "date": "05.10.2026"
   }
 ]
