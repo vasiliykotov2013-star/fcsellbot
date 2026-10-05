@@ -1825,5 +1825,14 @@
     "amount": 1,
     "timestamp": "06:53:28",
     "date": "05.10.2026"
+  },
+  {
+    "player": "Klaunzer",
+    "title": "[Принц]",
+    "price": 330,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "09:41:59",
+    "date": "05.10.2026"
   }
 ]
