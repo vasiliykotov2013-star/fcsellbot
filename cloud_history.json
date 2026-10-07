@@ -2158,5 +2158,14 @@
     "amount": 1,
     "timestamp": "17:42:39",
     "date": "07.10.2026"
+  },
+  {
+    "player": "rozetka4",
+    "title": "Монетные ключи",
+    "price": 7,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "17:45:58",
+    "date": "07.10.2026"
   }
 ]
