@@ -2212,5 +2212,14 @@
     "amount": 1,
     "timestamp": "20:42:13",
     "date": "07.10.2026"
+  },
+  {
+    "player": "tipo3horoshi",
+    "title": "[Админ]",
+    "price": 59,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "21:36:35",
+    "date": "07.10.2026"
   }
 ]
