@@ -2365,5 +2365,14 @@
     "amount": 1,
     "timestamp": "13:38:06",
     "date": "08.10.2026"
+  },
+  {
+    "player": "13w_",
+    "title": "[Оператор]",
+    "price": 160,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "13:47:58",
+    "date": "08.10.2026"
   }
 ]
