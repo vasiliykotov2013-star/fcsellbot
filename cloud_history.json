@@ -2410,5 +2410,14 @@
     "amount": 1,
     "timestamp": "20:56:07",
     "date": "08.10.2026"
+  },
+  {
+    "player": "LOGAS",
+    "title": "Ключи с монетками",
+    "price": 195,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "23:18:36",
+    "date": "08.10.2026"
   }
 ]
