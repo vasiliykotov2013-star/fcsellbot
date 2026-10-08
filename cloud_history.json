@@ -2401,5 +2401,14 @@
     "amount": 1,
     "timestamp": "14:14:11",
     "date": "08.10.2026"
+  },
+  {
+    "player": "GORGEOUS",
+    "title": "[Элита]",
+    "price": 220,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "20:56:07",
+    "date": "08.10.2026"
   }
 ]
