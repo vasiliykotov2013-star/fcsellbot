@@ -2464,5 +2464,50 @@
     "amount": 1,
     "timestamp": "13:59:22",
     "date": "09.10.2026"
+  },
+  {
+    "player": "xuliganvdmob",
+    "title": "5000 токенов",
+    "price": 50,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "18:39:30",
+    "date": "09.10.2026"
+  },
+  {
+    "player": "xuliganvdmob",
+    "title": "5000 токенов",
+    "price": 50,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "18:43:30",
+    "date": "09.10.2026"
+  },
+  {
+    "player": "bebebek",
+    "title": "Рубины",
+    "price": 100,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "18:47:30",
+    "date": "09.10.2026"
+  },
+  {
+    "player": "88_BMW_M4_88",
+    "title": "[Властелин]",
+    "price": 349,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "18:51:30",
+    "date": "09.10.2026"
+  },
+  {
+    "player": "lertal",
+    "title": "[Властелин]",
+    "price": 70,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "18:55:30",
+    "date": "09.10.2026"
   }
 ]
