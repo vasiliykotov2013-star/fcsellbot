@@ -2626,5 +2626,14 @@
     "amount": 1,
     "timestamp": "22:08:55",
     "date": "09.10.2026"
+  },
+  {
+    "player": "DORADURA",
+    "title": "[Герцог]",
+    "price": 1830,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "23:08:56",
+    "date": "09.10.2026"
   }
 ]
