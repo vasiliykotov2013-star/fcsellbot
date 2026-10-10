@@ -2725,5 +2725,14 @@
     "amount": 1,
     "timestamp": "11:11:03",
     "date": "10.10.2026"
+  },
+  {
+    "player": "bearbestik",
+    "title": "[Сервер]",
+    "price": 470,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "12:00:04",
+    "date": "10.10.2026"
   }
 ]
