@@ -2896,5 +2896,14 @@
     "amount": 1,
     "timestamp": "18:12:10",
     "date": "10.10.2026"
+  },
+  {
+    "player": "ricJell",
+    "title": "[Гл.Админ]",
+    "price": 119,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "20:09:33",
+    "date": "10.10.2026"
   }
 ]
