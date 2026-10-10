@@ -2707,5 +2707,14 @@
     "amount": 1,
     "timestamp": "09:30:17",
     "date": "10.10.2026"
+  },
+  {
+    "player": "Petr20000",
+    "title": "[Гл.Админ]",
+    "price": 119,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "11:02:40",
+    "date": "10.10.2026"
   }
 ]
