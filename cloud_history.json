@@ -2797,5 +2797,14 @@
     "amount": 1,
     "timestamp": "14:41:18",
     "date": "10.10.2026"
+  },
+  {
+    "player": "amin",
+    "title": "[Герой]",
+    "price": 39,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "15:38:10",
+    "date": "10.10.2026"
   }
 ]
