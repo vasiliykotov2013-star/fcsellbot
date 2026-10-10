@@ -2779,5 +2779,14 @@
     "amount": 1,
     "timestamp": "13:13:23",
     "date": "10.10.2026"
+  },
+  {
+    "player": "Wh1be",
+    "title": "[КОМАНДА]",
+    "price": 2000,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "14:32:52",
+    "date": "10.10.2026"
   }
 ]
