@@ -3049,5 +3049,14 @@
     "amount": 1,
     "timestamp": "14:08:35",
     "date": "11.10.2026"
+  },
+  {
+    "player": "Shahbik",
+    "title": "[PLUTO]",
+    "price": 99,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "14:18:59",
+    "date": "11.10.2026"
   }
 ]
