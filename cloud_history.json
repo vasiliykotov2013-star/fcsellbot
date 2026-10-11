@@ -3076,5 +3076,14 @@
     "amount": 1,
     "timestamp": "15:32:12",
     "date": "11.10.2026"
+  },
+  {
+    "player": "LOGAS",
+    "title": "Рубины",
+    "price": 111,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "17:19:36",
+    "date": "11.10.2026"
   }
 ]
