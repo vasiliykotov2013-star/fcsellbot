@@ -3409,5 +3409,14 @@
     "amount": 1,
     "timestamp": "23:51:01",
     "date": "13.10.2026"
+  },
+  {
+    "player": "bebebek",
+    "title": "Рубины",
+    "price": 199,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "23:56:30",
+    "date": "13.10.2026"
   }
 ]
