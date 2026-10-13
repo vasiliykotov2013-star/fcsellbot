@@ -3346,5 +3346,14 @@
     "amount": 1,
     "timestamp": "22:22:31",
     "date": "13.10.2026"
+  },
+  {
+    "player": "doradura",
+    "title": "5000 токенов",
+    "price": 50,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "22:22:52",
+    "date": "13.10.2026"
   }
 ]
