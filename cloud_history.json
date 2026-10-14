@@ -3427,5 +3427,14 @@
     "amount": 1,
     "timestamp": "00:07:38",
     "date": "14.10.2026"
+  },
+  {
+    "player": "Adelin4ikotikk",
+    "title": "Рубины",
+    "price": 150,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "15:05:32",
+    "date": "14.10.2026"
   }
 ]
