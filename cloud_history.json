@@ -3508,5 +3508,14 @@
     "amount": 1,
     "timestamp": "21:05:26",
     "date": "14.10.2026"
+  },
+  {
+    "player": "V1lten",
+    "title": "Монетные ключи",
+    "price": 7,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "21:06:33",
+    "date": "14.10.2026"
   }
 ]
