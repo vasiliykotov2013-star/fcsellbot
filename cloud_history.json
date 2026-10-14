@@ -3454,5 +3454,14 @@
     "amount": 1,
     "timestamp": "16:59:16",
     "date": "14.10.2026"
+  },
+  {
+    "player": "DORADURA",
+    "title": "Разбан",
+    "price": 499,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "18:58:52",
+    "date": "14.10.2026"
   }
 ]
