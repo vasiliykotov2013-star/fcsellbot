@@ -3481,5 +3481,14 @@
     "amount": 1,
     "timestamp": "19:41:41",
     "date": "14.10.2026"
+  },
+  {
+    "player": "car",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "20:16:41",
+    "date": "14.10.2026"
   }
 ]
