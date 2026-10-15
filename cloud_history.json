@@ -3535,5 +3535,14 @@
     "amount": 1,
     "timestamp": "07:18:01",
     "date": "15.10.2026"
+  },
+  {
+    "player": "Wulkanru",
+    "title": "[Страж]",
+    "price": 27,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "11:56:45",
+    "date": "15.10.2026"
   }
 ]
