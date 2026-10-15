@@ -3652,5 +3652,14 @@
     "amount": 1,
     "timestamp": "23:54:42",
     "date": "15.10.2026"
+  },
+  {
+    "player": "Werewolf666",
+    "title": "Рубины",
+    "price": 98,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "01:56:58",
+    "date": "16.10.2026"
   }
 ]
