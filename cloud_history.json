@@ -3769,5 +3769,14 @@
     "amount": 1,
     "timestamp": "18:49:21",
     "date": "16.10.2026"
+  },
+  {
+    "player": "ZDIDERZ",
+    "title": "[Барон]",
+    "price": 15,
+    "server": "anarchy",
+    "amount": 1,
+    "timestamp": "20:16:01",
+    "date": "16.10.2026"
   }
 ]
