@@ -3886,5 +3886,14 @@
     "amount": 1,
     "timestamp": "11:51:00",
     "date": "17.10.2026"
+  },
+  {
+    "player": "DrRight",
+    "title": "Рубины",
+    "price": 400,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "12:02:40",
+    "date": "17.10.2026"
   }
 ]
