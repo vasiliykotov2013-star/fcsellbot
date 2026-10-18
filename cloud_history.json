@@ -4057,5 +4057,32 @@
     "amount": 1,
     "timestamp": "21:21:27",
     "date": "18.10.2026"
+  },
+  {
+    "player": "_Stalkeeer_",
+    "title": "[FORS]",
+    "price": 1500,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "00:53:11",
+    "date": "19.10.2026"
+  },
+  {
+    "player": "scandallQcold",
+    "title": "[Премиум]",
+    "price": 29,
+    "server": "survival",
+    "amount": 1,
+    "timestamp": "00:57:11",
+    "date": "19.10.2026"
+  },
+  {
+    "player": "LOGAS",
+    "title": "Рубины",
+    "price": 400,
+    "server": "other",
+    "amount": 1,
+    "timestamp": "01:01:11",
+    "date": "19.10.2026"
   }
 ]
